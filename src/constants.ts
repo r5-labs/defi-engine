@@ -4,8 +4,9 @@ import JSBI from 'jsbi'
 export type BigintIsh = JSBI | bigint | string
 
 export enum ChainId {
-  WAVE = 550,
-  BITNET = 210,
+  R5 = 337,
+  TR5 = 33710,
+  DR5 = 33711,
 }
 
 export enum TradeType {
@@ -22,13 +23,15 @@ export enum Rounding {
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
 export const FACTORY_ADDRESSES: { [chainId in ChainId]: string } = {
-  [ChainId.WAVE]: '0x1F68F0Ac4Cd9387A0e6eB6F3B894Cb98177AB0a4',
-  [ChainId.BITNET]: '0xCba3Dc15Cfbcd900cF8133E39257c26727E86e3a',
+  [ChainId.R5]: '0x1F68F0Ac4Cd9387A0e6eB6F3B894Cb98177AB0a4',
+  [ChainId.TR5]: '0x1F68F0Ac4Cd9387A0e6eB6F3B894Cb98177AB0a4',
+  [ChainId.DR5]: '0x1F68F0Ac4Cd9387A0e6eB6F3B894Cb98177AB0a4',
 }
 
 export const INIT_CODE_HASHES: { [chainId in ChainId]: string } = {
-  [ChainId.WAVE]: '0xc3c90899ffbab4fde73965749d2c0b9462b16a2965a2d1eafc21630dfb68552c',
-  [ChainId.BITNET]: '0xf06bde01e9762a7025e7a8d8c95d47fc18e8d5fc2588f7dacf399f504b1fedab',
+  [ChainId.R5]: '0xc3c90899ffbab4fde73965749d2c0b9462b16a2965a2d1eafc21630dfb68552c',
+  [ChainId.TR5]: '0xc3c90899ffbab4fde73965749d2c0b9462b16a2965a2d1eafc21630dfb68552c',
+  [ChainId.DR5]: '0xc3c90899ffbab4fde73965749d2c0b9462b16a2965a2d1eafc21630dfb68552c',
 }
 
 // exports for internal consumption

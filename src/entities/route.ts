@@ -1,7 +1,7 @@
 import { ChainId } from '../constants'
 import invariant from 'tiny-invariant'
 
-import { Currency, WAVE, BITNET } from './currency'
+import { Currency, ETHER, TR5 } from './currency'
 import { Token, WETH } from './token'
 import { Pair } from './pair'
 import { Price } from './fractions/price'
@@ -21,13 +21,13 @@ export class Route {
     )
     invariant(
       (input instanceof Token && pairs[0].involvesToken(input)) ||
-        (( input === WAVE || input === BITNET ) && pairs[0].involvesToken(WETH[pairs[0].chainId])),
+        (( input === ETHER || input === TR5 ) && pairs[0].involvesToken(WETH[pairs[0].chainId])),
       'INPUT'
     )
     invariant(
       typeof output === 'undefined' ||
         (output instanceof Token && pairs[pairs.length - 1].involvesToken(output)) ||
-        (( output === WAVE || output === BITNET ) &&
+        (( output === ETHER || output === TR5 ) &&
           pairs[pairs.length - 1].involvesToken(WETH[pairs[0].chainId])),
       'OUTPUT'
     )

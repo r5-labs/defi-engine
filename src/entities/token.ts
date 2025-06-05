@@ -57,18 +57,25 @@ export function currencyEquals(currencyA: Currency, currencyB: Currency): boolea
 }
 
 export const WETH = {
-  [ChainId.WAVE]: new Token(
-    ChainId.WAVE,
-    '0x508aeBc3172eE8FdA7cc746f224C8D9061be7cbd',
+  [ChainId.R5]: new Token(
+    ChainId.R5,
+    '0x8cDAb49A98e190A14B1b1795A4f0E9cDa80445b4',
     18,
-    'WWAVE',
-    'Wrapped Wavecoin'
+    'WRT',
+    'Wrapped R5 Token'
   ),
-  [ChainId.BITNET]: new Token(
-    ChainId.BITNET,
-    '0x8148b71232162EA7a0b1c8bFE2b8F023934BFb58',
+  [ChainId.TR5]: new Token(
+    ChainId.TR5,
+    '0x8cDAb49A98e190A14B1b1795A4f0E9cDa80445b4',
     18,
-    'WBTN',
-    'Wrapped Bitnet'
-  )
+    'WRT',
+    'Wrapped R5 Token'
+  ),
+  [ChainId.DR5]: new Token(
+    ChainId.DR5,
+    '0x8cDAb49A98e190A14B1b1795A4f0E9cDa80445b4',
+    18,
+    'WRT',
+    'Wrapped R5 Token'
+  ),
 }
