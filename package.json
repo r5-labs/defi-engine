@@ -1,16 +1,17 @@
 {
-  "name": "@xenwave/sdk",
+  "name": "r5-defi-engine",
   "license": "MIT",
   "version": "3.0.3",
-  "description": "🛠 An SDK for building applications on top of Xenwave.",
+  "description": "🛠 An SDK for building DeFi applications on the R5 Network.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/restratagem/xenwave-sdk.git",
+  "repository": "https://github.com/r5-labs/defi-engine.git",
   "keywords": [
-    "xenwave",
+    "defi",
+    "engine",
     "sdk"
   ],
   "module": "dist/sdk.esm.js",
