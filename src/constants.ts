@@ -28,12 +28,29 @@ export const FACTORY_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.DR5]: '0xeC1C8476c7b38014B07ce02C080eF38D2166F141',
 }
 
+export const ROUTER_ADDRESSES: { [chainId in ChainId]: string } = {
+  [ChainId.R5]: '0x8D36f6Ef098263427e6ce9Db7a6bC518727002b5',
+  [ChainId.TR5]: '0x8D36f6Ef098263427e6ce9Db7a6bC518727002b5',
+  [ChainId.DR5]: '0x8D36f6Ef098263427e6ce9Db7a6bC518727002b5'
+}
+
 export const INIT_CODE_HASHES: { [chainId in ChainId]: string } = {
   [ChainId.R5]: '0x544a6894c2418600f8c457fe5d4135814cf3fa97f6faebe3e5f68ef34f1b02d8',
   [ChainId.TR5]: '0x544a6894c2418600f8c457fe5d4135814cf3fa97f6faebe3e5f68ef34f1b02d8',
   [ChainId.DR5]: '0x544a6894c2418600f8c457fe5d4135814cf3fa97f6faebe3e5f68ef34f1b02d8',
 }
 
+export const WR5: { [chainId in ChainId]: string } = {
+  [ChainId.R5]: '0x8cDAb49A98e190A14B1b1795A4f0E9cDa80445b4',
+  [ChainId.TR5]: '0x8cDAb49A98e190A14B1b1795A4f0E9cDa80445b4',
+  [ChainId.DR5]: '0x8cDAb49A98e190A14B1b1795A4f0E9cDa80445b4'
+}
+
+export const CHAIN_ID: { [chainId in ChainId]: string } = {
+  [ChainId.R5]: '337',
+  [ChainId.TR5]: '33710',
+  [ChainId.DR5]: '33711'
+}
 // exports for internal consumption
 export const ZERO = JSBI.BigInt(0)
 export const ONE = JSBI.BigInt(1)

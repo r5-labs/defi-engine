@@ -61,7 +61,7 @@ function toHex(currencyAmount: CurrencyAmount) {
 const ZERO_HEX = '0x0'
 
 /**
- * Represents the Uniswap V2 Router, and has static methods for helping execute trades.
+ * Represents the Router, and has static methods for helping execute trades.
  */
 export abstract class Router {
   /**
