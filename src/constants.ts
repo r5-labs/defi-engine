@@ -23,15 +23,15 @@ export enum Rounding {
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
 export const FACTORY_ADDRESSES: { [chainId in ChainId]: string } = {
-  [ChainId.R5]: '0xeC1C8476c7b38014B07ce02C080eF38D2166F141',
-  [ChainId.TR5]: '0xeC1C8476c7b38014B07ce02C080eF38D2166F141',
-  [ChainId.DR5]: '0xeC1C8476c7b38014B07ce02C080eF38D2166F141',
+  [ChainId.R5]: '0xf71bdA68fA2Ef89dD1402188fBD55cdb74b6A407',
+  [ChainId.TR5]: '0xf71bdA68fA2Ef89dD1402188fBD55cdb74b6A407',
+  [ChainId.DR5]: '0xf71bdA68fA2Ef89dD1402188fBD55cdb74b6A407',
 }
 
 export const ROUTER_ADDRESSES: { [chainId in ChainId]: string } = {
-  [ChainId.R5]: '0x8D36f6Ef098263427e6ce9Db7a6bC518727002b5',
-  [ChainId.TR5]: '0x8D36f6Ef098263427e6ce9Db7a6bC518727002b5',
-  [ChainId.DR5]: '0x8D36f6Ef098263427e6ce9Db7a6bC518727002b5'
+  [ChainId.R5]: '0x70dA5c229f2Be232FC4CE2A4cC07470bcF895689',
+  [ChainId.TR5]: '0x70dA5c229f2Be232FC4CE2A4cC07470bcF895689',
+  [ChainId.DR5]: '0x70dA5c229f2Be232FC4CE2A4cC07470bcF895689'
 }
 
 export const INIT_CODE_HASHES: { [chainId in ChainId]: string } = {
